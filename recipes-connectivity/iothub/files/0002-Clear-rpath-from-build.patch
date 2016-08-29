@@ -1,0 +1,25 @@
+From ede6bbf9787ca53c2c3b5690a0ddbc3e722a76c6 Mon Sep 17 00:00:00 2001
+From: Michael Boulton <michaelboulton@gmail.com>
+Date: Mon, 18 Jul 2016 13:48:10 +0100
+Subject: [PATCH 2/2] Clear rpath from build
+
+---
+ c/CMakeLists.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/c/CMakeLists.txt b/c/CMakeLists.txt
+index e5e0ba6..6911cb0 100644
+--- a/c/CMakeLists.txt
++++ b/c/CMakeLists.txt
+@@ -4,6 +4,8 @@
+ cmake_minimum_required(VERSION 2.8.11)
+ project(azure_iot_sdks)
+ 
++set (CMAKE_SKIP_BUILD_RPATH TRUE)
++
+ #making a nice global variable to know if we are on linux or not.
+ if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+     set(LINUX TRUE)
+-- 
+2.7.4
+

@@ -1,0 +1,25 @@
+From 1e50b7ec5385a6f5c2f4d65adb41b27ba998bba0 Mon Sep 17 00:00:00 2001
+From: Michael Boulton <michaelboulton@gmail.com>
+Date: Mon, 18 Jul 2016 11:08:33 +0100
+Subject: [PATCH] Change boost python version
+
+---
+ python/device/iothub_client_python/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/python/device/iothub_client_python/CMakeLists.txt b/python/device/iothub_client_python/CMakeLists.txt
+index d34747b..8f27b8e 100644
+--- a/python/device/iothub_client_python/CMakeLists.txt
++++ b/python/device/iothub_client_python/CMakeLists.txt
+@@ -38,7 +38,7 @@ else()
+     else()
+         # Remove the period from python version for boost component
+         string(REPLACE "." "" boost_python ${build_python})
+-        find_package(Boost COMPONENTS "python-py${boost_python}" REQUIRED)
++        find_package(Boost COMPONENTS "python3" REQUIRED)
+     endif()
+ endif()
+ 
+-- 
+2.7.4
+
