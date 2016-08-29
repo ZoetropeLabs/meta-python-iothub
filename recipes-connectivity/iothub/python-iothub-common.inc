@@ -1,7 +1,5 @@
 DESCRIPTION = "Azure iot hub package" 
 SECTION = "core" 
-PR = "r0" 
-BBCLASSEXTEND = "native"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${WORKDIR}/git/LICENSE;md5=4283671594edec4c13aeb073c219237a"
 
