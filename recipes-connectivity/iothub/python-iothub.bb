@@ -1,4 +1,4 @@
-inherit distutils3-base
+inherit distutils-base
 
 require python-iothub-common.inc
 
